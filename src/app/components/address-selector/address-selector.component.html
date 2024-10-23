@@ -1,0 +1,28 @@
+<div class="main-container text-center mt-5">
+  <div class="country-container mt-3">
+    <select name="" id="" (change)="onCountryChange($event)">
+      <option value="">Select</option>
+      @for (item of countries; track item.id) {
+      <option [value]="item.iso2">{{ item.name }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="state-container mt-3">
+    <select name="" id="" (change)="onStateChange($event)">
+      <option value="">Select</option>
+      @for (item of states;track item.id){
+      <option [value]="item.iso2">{{ item.name }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="city-container mt-3">
+    <select name="" id="">
+      <option value="">Select</option>
+      @for(item of cities; track item.id){
+      <option [value]="item.id">{{ item.name }}</option>
+      }
+    </select>
+  </div>
+</div>

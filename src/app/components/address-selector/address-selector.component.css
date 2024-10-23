@@ -1,0 +1,29 @@
+.main-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-container,
+.state-container,
+.city-container {
+  margin-bottom: 20px;
+}
+
+select {
+  width: 70%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
